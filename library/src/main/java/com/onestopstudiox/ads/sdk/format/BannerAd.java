@@ -304,6 +304,8 @@ public class BannerAd {
                                 public void onAdFailedToLoad(@NonNull LoadAdError adError) {
                                     // Code to be executed when an ad request fails.
                                     adContainerView.setVisibility(View.GONE);
+                                    loadBannerAd();
+
                                 }
 
                                 @Override
@@ -372,6 +374,7 @@ public class BannerAd {
                             public void onBannerFailedToLoad(BannerView bannerView, BannerErrorInfo bannerErrorInfo) {
                                 Log.d("SupportTest", "Banner Error" + bannerErrorInfo);
                                 unityAdView.setVisibility(View.GONE);
+                                loadBannerAd();
                             }
 
                             @Override
