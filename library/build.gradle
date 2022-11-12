@@ -26,7 +26,7 @@ android {
     lint {
         disable 'GradleDependency'
     }
-    namespace 'com.onestopstudiox.ads'
+
 }
 
 dependencies {
