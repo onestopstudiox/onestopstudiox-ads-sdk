@@ -23,6 +23,9 @@
             android:name="applovin.sdk.key"
             android:value="@string/applovin_sdk_key" />
 
+        <meta-data android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
+            android:value="false" />
+
         <activity
             android:name=".ActivitySplash"
             android:exported="true"
